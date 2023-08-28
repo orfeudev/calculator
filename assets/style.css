@@ -9,18 +9,18 @@
     
 }
 h1 {
-    background-color: black;
+    background-color:;
     color: grey;
     font-size: 66px;
     text-align: center;
     width: 800px;
     margin-bottom:2px ;
-    -webkit-text-fill-color:  #000; 
-    -webkit-text-stroke: 2px #fff; 
+    -webkit-text-fill-color: transparent; 
+    -webkit-text-stroke: 2px #000; 
 }
 
 .calcInput {
-    width: 260px;
+    width: 373px;
     height: 30px;
     outline: none;
     border: solid 1px gray;
