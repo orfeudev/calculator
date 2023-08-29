@@ -9,14 +9,13 @@
     
 }
 h1 {
-    background-color:;
     color: grey;
     font-size: 66px;
     text-align: center;
     width: 800px;
     margin-bottom:2px ;
-    -webkit-text-fill-color: transparent; 
-    -webkit-text-stroke: 2px #000; 
+    -webkit-text-fill-color: #fff; 
+    -webkit-text-stroke: 2px #aaa8e0; 
 }
 
 .calcInput {
@@ -64,4 +63,11 @@ button:hover {
     transform: scale(1.3); 
     filter: brightness(90%); 
 }
+.background-image {
+    background-image: url('../assets/imagem/KSxQD3.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    
+  }
   
