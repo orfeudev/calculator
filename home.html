@@ -18,7 +18,7 @@
         </header>
         <main>
             <div class="result">
-                <input type="text" class="calcInput" id="inputCalc" placeholder="0000000000000000000000000" >
+                <input class="calcInput" id="inputCalc" placeholder="0000000000000000000000000" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');">
                 <button class="operators2" onclick="clearInput()">C</button>
             </div>
             <div class="calcButtons">
@@ -32,7 +32,7 @@
                         <button class="colorNumbers" onclick="addToInput('7')">7</button>
                         <button class="colorNumbers" onclick="addToInput('8')">8</button>
                         <button class="colorNumbers" onclick="addToInput('9')">9</button>
-                        <button class="operators" onclick="addToInput('Math.sqrt(')"><i class="fa-solid fa-square-root-variable"></i></button>
+                        <button class="operators" onclick="calculateRoot()"><i class="fa-solid fa-square-root-variable"></i></button>
                 </div>
                 <div>
                         <button class="colorNumbers" onclick="addToInput('4')">4</button>
