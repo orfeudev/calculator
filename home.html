@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="../calculadora/assets/reset.css">
     <link rel="stylesheet" type="text/css" href="../calculadora/assets/style.css">
     <script src="https://kit.fontawesome.com/c861a842d2.js" crossorigin="anonymous"></script>
-
+    
     <title></title>
 </head>
 <body>
@@ -18,40 +18,42 @@
         </header>
         <main>
             <div class="result">
-                <input type="text" class="calcInput" id="inputCalc" placeholder="0000000000000000000000000000000000" >
+                <input type="text" class="calcInput" id="inputCalc" placeholder="0000000000000000000000000" >
+                <button class="operators2" onclick="clearInput()">C</button>
             </div>
             <div class="calcButtons">
                 <div>
-                    <button class="operators"><i class="fa-solid fa-plus"></i></button>
-                    <button class="operators"><i class="fa-solid fa-minus"></i></button>
-                    <button class="operators"><i class="fa-solid fa-xmark"></i></button>
-                    <button class="operators"><i class="fa-solid fa-divide"></i></button>
+                    <button class="operators" onclick="addToInput('+')"><i class="fa-solid fa-plus"></i></button>
+                    <button class="operators" onclick="addToInput('-')"><i class="fa-solid fa-minus"></i></button>
+                    <button class="operators" onclick="addToInput('*')"><i class="fa-solid fa-xmark"></i></button>
+                    <button class="operators" onclick="addToInput('/')"><i class="fa-solid fa-divide"></i></button>
                 </div>
                 <div>
-                    <button class="colorNumbers" >1</button>
-                    <button class="colorNumbers">2</button>
-                    <button class="colorNumbers">3</button>
-                    <button class="operators"><i class="fa-solid fa-square-root-variable"></i></button>
+                        <button class="colorNumbers" onclick="addToInput('7')">7</button>
+                        <button class="colorNumbers" onclick="addToInput('8')">8</button>
+                        <button class="colorNumbers" onclick="addToInput('9')">9</button>
+                        <button class="operators" onclick="addToInput('Math.sqrt(')"><i class="fa-solid fa-square-root-variable"></i></button>
                 </div>
                 <div>
-                    <button class="colorNumbers">4</button>
-                    <button class="colorNumbers">5</button>
-                    <button class="colorNumbers">6</button>
-                    <button class="signals">x²</button>
+                        <button class="colorNumbers" onclick="addToInput('4')">4</button>
+                        <button class="colorNumbers" onclick="addToInput('5')">5</button>
+                        <button class="colorNumbers" onclick="addToInput('6')">6</button>
+                        <button class="operators" onclick="calculateSquare()">X²</button>
                 </div>
                 <div>
-                    <button class="colorNumbers">7</button>
-                    <button class="colorNumbers">8</button>
-                    <button class="colorNumbers">9</button>
-                    <button class="signals">.</button>
+                        <button class="colorNumbers" onclick="addToInput('1')">1</button>
+                        <button class="colorNumbers" onclick="addToInput('2')">2</button>
+                        <button class="colorNumbers" onclick="addToInput('3')">3</button>
+                        <button class="signals" onclick="addToInput('.')">.</button>
                 </div>
-            <div>
-                <button class="colorNumbers2">0</button>
-                <button class="signals">=</button>
-            </div>
+                <div>
+                        <button class="colorNumbers2" onclick="addToInput('0')">0</button>
+                        <button class="signals" onclick="calculate()">=</button>
+                </div>        
         </div>
         </main>
         <footer></footer>
     </div>
+    <script src="../calculadora/assets/script/script.js"></script>
 </body>
 </html>

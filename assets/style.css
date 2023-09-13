@@ -6,20 +6,27 @@
     display:flex;
     justify-content: center;
     align-items: center;
-    
+      
 }
 h1 {
+    margin-top: 50px;
     color: grey;
     font-size: 66px;
     text-align: center;
-    width: 800px;
-    margin-bottom:2px ;
+    width: 390px;
+    margin-bottom:4px ;
     -webkit-text-fill-color: #fff; 
-    -webkit-text-stroke: 2px #aaa8e0; 
+    -webkit-text-stroke: 2px #000; 
+    border-radius: 15px;
+    border: solid  1px  #000;
+    background: linear-gradient(#aaa8e0, #d5d4ef);
+    box-shadow: 2px 2px #000;
+
+
 }
 
 .calcInput {
-    width: 373px;
+    width: 280px;
     height: 30px;
     outline: none;
     border: solid 1px gray;
@@ -38,13 +45,17 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
+   
+    
 }
 
 button {
    width: 90px;
    height: 40px;
-   margin: 1px;
+   margin: 1.5px;
    transition: transform 0.3s, background-color 0.3s;
+   box-shadow: 2px 2px #000;
 }
 .colorNumbers2 {
     width: 285px;
@@ -54,17 +65,28 @@ button {
     background-color: #d5d4ef;
 }
 .operators {
-    background-color: #aaa8e0;
+    background: linear-gradient(#aaa8e0, #d5d4ef);
+    
+}
+.operators2 {
+    background: linear-gradient(#f7535e, #ff938a);
 }
 .signals {
-    background-color: #aaa8e0;
+    background: linear-gradient(#aaa8e0, #d5d4ef);
 }
 button:hover {
     transform: scale(1.3); 
     filter: brightness(90%); 
 }
-.background-image {
-    background-image: url('../assets/imagem/KSxQD3.jpg');
+
+body {
+    -webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+text-rendering: optimizeLegibility;
+font-feature-settings: "cv11", "salt", "ss01", "ss03", "cv01", "cv02", "cv03", "cv04", "cv05", "cv06", "cv09", "cv10"
+}
+/*.background-image {
+    background-image: url('../assets/imagem/b59be91ed656bda62bc81f185679c22f.jpg');
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
